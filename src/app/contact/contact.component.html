@@ -1,0 +1,48 @@
+<div class="contact slide-bck-center"> 
+  <div class="one">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem laborum quis error beatae ipsa iure amet magnam nemo excepturi nisi!
+  </div>
+  <div class="two">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem laborum quis error beatae ipsa iure amet magnam nemo excepturi nisi!
+    </div>
+    <div class="three">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem laborum quis error beatae ipsa iure amet magnam nemo excepturi nisi!
+      </div>
+</div>
+
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th> Adress</th>
+      <th> Phone</th>
+      <th> Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contact of contacts">
+      <td> {{contact.address}}</td>
+      <td> {{contact.phone}}</td>
+      <td> {{contact.email}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div>
+    <input
+    type='text'
+    style='padding:8px;margin:15px auto;width:30%;'
+    placeholder='Type to filter the name column...'
+    (keyup)='updateFilter($event)'
+  />
+  <ngx-datatable
+    class='material'
+    [columns]="columns"
+    [columnMode]="'force'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [rowHeight]="'auto'"
+    [limit]="1"
+    [rows]='rows'>
+</ngx-datatable>
+</div>
+

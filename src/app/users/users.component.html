@@ -1,0 +1,33 @@
+
+<button nz-button nzType="primary" (click)="showModal()">
+  <span>Show Modal</span>
+</button>
+<nz-modal [(nzVisible)]="isVisible" nzTitle="Modal Title" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()" [nzOkLoading]="isOkLoading">
+  <p>Modal Content</p>
+</nz-modal>
+
+<a nz-popconfirm nzTitle="Are you sure delete this task?" (nzOnConfirm)="confirm()" (nzOnCancel)="cancel()">Delete</a>
+
+<h5 (copy)="new()"> Copy Click </h5>
+
+<!--open data-->
+
+<ul *ngFor="let open of opendata">
+  <li> {{ open.name}}</li>
+  <p>{{open.size}}</p>
+</ul>
+
+<h1 (click)="shadab()"> {{Shadab}}</h1>
+<h1>My first search app</h1>
+<ais-instantsearch [config]="algolia">
+  <ais-search-box></ais-search-box>
+  <ais-hits>
+    <ng-template let-hits="hits">
+      <div *ngFor="let hit of hits">
+        <img [src]='hit.img'>
+       <h2> {{hit.name}} </h2>
+       <h6> {{hit.age}}</h6>
+      </div>
+    </ng-template>
+  </ais-hits>
+</ais-instantsearch>

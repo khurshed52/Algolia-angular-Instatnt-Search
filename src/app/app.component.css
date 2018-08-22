@@ -1,0 +1,10 @@
+.HeaderBG {
+    width: 100%;
+    background: #2193b0;
+    color: #fff;
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    padding: 10px;
+    position: relative;
+    -webkit-clip-path: polygon(38% 0, 100% 56%, 0 57%, 0% 35%, 0 0);
+    clip-path: polygon(38% 0, 100% 56%, 0 57%, 0% 35%, 0 0);
+}

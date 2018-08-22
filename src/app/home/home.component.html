@@ -1,0 +1,79 @@
+<h1 (click)="new()">
+  Welcome to {{ title }}!
+</h1>
+
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat consequat enim, non auctor massa ultrices non.
+  Morbi sed odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci varius natoque penatibus et magnis</p>
+<!-- 
+<button [disabled]= "clicked" (click)="data()"> click </button> -->
+
+<button (click)="show=!show">{{show ? 'hide' : 'show'}}</button>
+
+<div *ngIf="show">
+  <h3> {{boat.name}} </h3>
+  <p> {{boat.price}}</p>
+</div>
+
+<table class="table-bordered">
+  <thead> 
+    <tr>
+      <th>Game Name</th>
+      <th>Price</th>
+      <th>img</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let game of games">
+      <td>{{game.name}}</td>
+      <td>{{game.price}}</td>
+      <td><img [src]="game.img" width="100"></td>
+    </tr>
+  </tbody>
+</table> 
+<div style="clear:both"></div>
+
+<section>
+  <div class="bladeShape">
+    rgdrrdrg
+  </div>
+</section>
+
+<section>
+  <div class="bladeShapeGreen">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laboriosam delectus! Itaque incidunt nostrum eaque animi totam voluptatem illum amet officia perspiciatis nesciunt corporis voluptate ullam nisi minus, dolorem beatae ad ipsum pariatur dolor minima sed quia placeat velit dolore! </p>
+  </div>
+</section>
+
+<div class="white">
+  <div class="red"></div>
+</div>
+
+<div class="flexContainer">
+  <div class="flexRow">
+    1
+  </div>
+  <div class="flexRow">
+    1
+  </div>
+  <div class="flexRow">
+    1
+  </div>
+</div>
+
+<details>
+ <summary>Menu </summary> 
+ <a href="#"> fff</a>
+ <a href="#"> fff</a>
+ <a href="#"> fff</a>
+ <a href="#"> fff</a>
+ <a href="#"> fff</a>
+</details>
+
+<details>
+    <summary>Menu 1 </summary> 
+    <a href="#"> fff</a>
+    <a href="#"> fff</a>
+    <a href="#"> fff</a>
+    <a href="#"> fff</a>
+    <a href="#"> fff</a>
+   </details>
