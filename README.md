@@ -1,4 +1,6 @@
-# Seo
+# Algolia angular Instatnt Search
+
+Source URL: https://community.algolia.com/angular-instantsearch/getting-started.html
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
